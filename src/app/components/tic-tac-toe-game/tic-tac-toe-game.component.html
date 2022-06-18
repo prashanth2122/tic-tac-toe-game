@@ -1,0 +1,11 @@
+<main>
+    <app-box-component 
+    class="box-card"        
+    *ngFor="let val of boxes; let i = index" 
+    [value]="val"
+    (click)="touched(i)">
+  </app-box-component>
+  </main>
+  <h2 *ngIf="winner" class="winner">Congratulations <span *ngIf="winner=='X'" class="player">PLAYER-1.!</span> <span *ngIf="winner=='O'" class="player">PLAYER-2.!</span> you won the game!</h2>
+  <h2 (click)="startGame()" class="restart-game">Restart</h2>
+  <p>Note:Person who make his first move is considered as PLAYER-1</p>

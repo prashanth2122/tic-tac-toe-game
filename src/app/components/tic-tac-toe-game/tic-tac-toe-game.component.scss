@@ -1,0 +1,20 @@
+main {
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-gap: 0px;
+}
+
+.box-card {
+    border: 1px gray solid;
+    height: 150px;
+}
+.restart-game{
+    cursor: pointer;
+    text-decoration: underline;
+    color: brown;
+}
+
+.player{
+    font-weight: 700;
+    color: white;
+}
